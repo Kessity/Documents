@@ -1,0 +1,9 @@
+The documents of the tools for ubuntu.
+time: 2017-10-02 
+vesion: 03
+
+back.txt: command for shell;
+installal.sh: install system;
+vimrc: vim script;
+.ycm_extra_conf.py(~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py):YCM
+orderv.vim: vim order back;

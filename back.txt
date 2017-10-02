@@ -1,0 +1,46 @@
+1.zip格式
+  压缩一个目录:zip -r archive_name.zip directory_to_compress
+　解压一个文档:unzip archive_name.zip
+2.tar格式
+  -c：建立一个压缩文件的参数指令(create 的意思);
+  -x：解开一个压缩文件的参数指令;
+  -t：查看 tarfile 里面的文件;
+  特别注意，在参数的下达中， c/x/t 仅能存在一个,不可同时存在！ 因为不可能同时压缩与解压缩。
+  -z：是否同时具有 gzip 的属性？亦即是否需要用 gzip 压缩？
+  -j：是否同时具有 bzip2 的属性？亦即是否需要用 bzip2 压缩？
+  -v：压缩的过程中显示文件！这个常用，但不建议用在背景执行过程！
+  -f：使用档名，请留意，在 f 之后要立即接档名喔！不要再加参数！
+3.git
+  1>first config the git
+    git config --global user.name "Kessity"
+    git config --global user.email "1677921708@qq.com"
+    ssh-keygen -t rsa -C "1677921708@qq.com"
+    ssh -T git@github.com
+  2>init the repository and first push to github
+    git init
+    git add xx
+    git commit -m "xxx"
+    git remote add origin git@github.com:Kessity/xxx
+    git push -u origin master
+  3>modif file and push to github
+    git status
+    git diff different.file
+    git add different.file
+    git commit -m "xxx" \
+    git commit --allow-empty-message
+    git push origin master
+  4>qusetion of the qusetion
+    1>a.fatal: remote origin already exists.
+      git remote rm origin
+    2>error: failed to push some refs to 'git@github.com:Kessity/Kessityfile'
+		git pull --rebase origin master
+6.vim
+  全局替换命令为:->%s/源字符串/目的字符串/g
+  vim批量插入
+  1.采用正则的方式
+    在普通模式下命令:->%s/^/123/g
+    这样就在行首插入123三个字符
+
+  2.可视块模式
+    ctrl+v进入可视块模式，选择文本。然后shift+i进入插入模式，输入’123’,再连按两次esc，这样就插入’123’。
+  查看文件类型:->set filetype
