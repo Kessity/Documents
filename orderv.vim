@@ -103,5 +103,4 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 "f3语法开关，关闭语法可以加快大文件的展示
 nnoremap <F3> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
 
-" nnoremap <leader>j :YcmCompleter GoToDeclaration<CR>
-" nnoremap <leader>g :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>g :YcmCompleter GoToDefinition<CR>

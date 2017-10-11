@@ -26,10 +26,20 @@
     git status
     git diff different.file
     git add different.file
+	 git rm filename
     git commit -m "xxx" \
     git commit --allow-empty-message
     git push origin master
-  4>qusetion of the qusetion
+  4>version
+    git log/git log --pretty=oneline
+	 git reset --hard HEAD^/^^
+	 git reset --hard xxxxxx
+	 git reflog
+  5>remove adn modify
+    git diff HEAD -- filename
+	 git checkout -- filename
+	 git reset HEAD filename
+  6>qusetion of the qusetion
     1>a.fatal: remote origin already exists.
       git remote rm origin
     2>error: failed to push some refs to 'git@github.com:Kessity/Kessityfile'
