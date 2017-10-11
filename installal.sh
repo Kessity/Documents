@@ -9,7 +9,7 @@
 # sudo apt-get remove onboard deja-dup
 # echo 安装常用软件*******************************************************
 # sudo apt install git cmake vim sdcv unrar ctags vim-gnome autoconf ksnapshot libboost-dev libboost-system-dev libboost-thread-dev libboost-filesystem-dev
-# sudo apt install apache2 php libapache2-mod-php php-mysql php7.0-dev clang
+# sudo apt install apache2 php libapache2-mod-php php-mysql php7.0-dev clang build-essential module-assistant gcc-multilib g++-multilib
 # git config --global user.email "1677921708@qq.com"
 # git config --global user.name "Kessity"
 # sudo apt install build-essential
@@ -22,7 +22,7 @@
 # sudo add-apt-repository ppa:nilarimogard/webupd8
 # sudo apt-get update
 # sudo apt-get install syspeek
-# 常用链接 
+# 常用链接
 # sudo ln -s /usr/bin/vim /usr/bin/v
 # echo 安装mysql*************************************************************
 # sudo apt-get install mysql-server
@@ -71,9 +71,9 @@
 # echo php-mysql扩展*******************************************************
 # cd ~/Public/mysql-45881bd
 # phpize
-# ./configure --with-php-config=/usr/bin/php-config --with-mysql=/usr 
+# ./configure --with-php-config=/usr/bin/php-config --with-mysql=/usr
 # sudo make
-# sudo make install  
+# sudo make install
 
 echo YCM配置*************************************************************
 cd ~/.vim/bundle/YouCompleteMe

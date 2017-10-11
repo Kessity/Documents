@@ -1,4 +1,4 @@
-set nocompatible  "取消版本一致性  
+set nocompatible  "取消版本一致性
 set backspace=indent,eol,start  "insert下退格健删除位于行首的空格，断行，进入insert前的位置
 set nu          "设置行数
 set history=40
@@ -39,6 +39,7 @@ nnoremap q :q!<CR>
 "粘贴复制的使用********************************************************************
 vnoremap <leader>y "+y
 nnoremap <leader>p "+p
+nnoremap <F7> :set filetype=cpp<CR>
 "**********************************************************************************
 
 " 显示中文帮助************************************************
@@ -280,7 +281,8 @@ inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDow
 inoremap <expr> <PageUp> pumvisible()? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
 
 "跳转到定义处和声明处
-nnoremap <leader>j :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>j :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_filepath_completion_use_working_dir = 1

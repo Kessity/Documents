@@ -104,3 +104,23 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 nnoremap <F3> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
 
 nnoremap <leader>g :YcmCompleter GoToDefinition<CR>
+
+"******************************************************************************
+#!/bin/bash
+
+cd /usr/share/vim/vim74/syntax/
+sudo cp cpp.vim h.vim
+cd /usr/share/vim/vim74/
+sudo cp filetype.vim filetype.vim.old
+
+# sudo vim filetype.vim
+# line:397 setf cpp -> setf h
+
+cd ~/.vim/fonts
+chmod u+x install.sh
+source install
+
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer --tern-completer
+
+cd .
