@@ -1,19 +1,20 @@
 #!/bin/bash
 
 # echo 关闭utc************************************************************
-# sudo timedatectl set-local-rtc 1 --adjust-system-clock
+# echo "wzx863"|sudo -S timedatectl set-local-rtc 1 --adjust-system-clock
 # echo 删除基本不用的插件*************************************************
 # sudo apt-get remove libreoffice-common
 # sudo apt-get remove unity-webapps-common
 # sudo apt-get remove thunderbird totem rhythmbox empathy brasero simple-scan gnome-mahjongg aisleriot gnome-mines cheese transmission-common gnome-orca webbrowser-app gnome-sudoku landscape-client-ui-install
 # sudo apt-get remove onboard deja-dup
-# echo 安装常用软件*******************************************************
-# sudo apt install git cmake vim sdcv unrar ctags vim-gnome autoconf ksnapshot libboost-dev libboost-system-dev libboost-thread-dev libboost-filesystem-dev
-# sudo apt install apache2 php libapache2-mod-php php-mysql php7.0-dev clang build-essential module-assistant gcc-multilib g++-multilib
-# git config --global user.email "1677921708@qq.com"
-# git config --global user.name "Kessity"
-# sudo apt install build-essential
-# sudo apt-get install python-dev python3-dev
+echo 安装常用软件*******************************************************
+sudo apt install git vim sdcv unrar exuberant-ctags autoconf libboost-dev libboost-system-dev libboost-thread-dev libboost-filesystem-dev
+sudo apt install vim-gnome
+sudo apt install cmake clang build-essential module-assistant gcc-multilib g++-multilib
+# sudo apt install apache2 php libapache2-mod-php php-mysql php7.0-dev
+git config --global user.email "1677921708@qq.com"
+git config --global user.name "Kessity"
+sudo apt-get install python-dev python3-dev
 # echo 安装经典菜单指示器**************************************************
 # sudo add-apt-repository ppa:diesch/testing
 # sudo apt-get update
@@ -22,12 +23,12 @@
 # sudo add-apt-repository ppa:nilarimogard/webupd8
 # sudo apt-get update
 # sudo apt-get install syspeek
-# 常用链接
+# echo 常用链接**************************************************************
 # sudo ln -s /usr/bin/vim /usr/bin/v
-# echo 安装mysql*************************************************************
-# sudo apt-get install mysql-server
-# sudo apt-get install mysql-client
-# sudo apt-get install libmysqlclient-dev
+echo 安装mysql*************************************************************
+sudo apt-get install mysql-server
+sudo apt-get install mysql-client
+sudo apt-get install libmysqlclient-dev
 
 # cd ~/Public
 
@@ -73,10 +74,10 @@
 # phpize
 # ./configure --with-php-config=/usr/bin/php-config --with-mysql=/usr
 # sudo make
-# sudo make install
+ #sudo make install
 
-echo YCM配置*************************************************************
+#echo YCM配置*************************************************************
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer --tern-completer
 
-cd ~/Documents
+#cd ~/Documents
